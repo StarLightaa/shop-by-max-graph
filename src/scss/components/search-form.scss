@@ -1,0 +1,6 @@
+.search-form {
+  &__btn {
+    @extend .shop-nav__link;
+    background-image: url('../images/search.png');
+  }
+}

@@ -1,5 +1,4 @@
 @import 'normalize.css/normalize';
-
 @include focus-visible;
 
 *,
@@ -22,15 +21,11 @@ body {
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 100%;
 
-  font-family: $font-family-primary;
+  font-family: $ff-Jost-Medium;
+  font-weight: 500;
   font-size: 16px;
-  font-weight: 400;
-}
-
-.container {
-  max-width: 1430px;
-  padding: 0 15px;
-  margin: 0 auto;
+  background-color: $color-white;
+  color: $color-dark;
 }
 
 a {

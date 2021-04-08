@@ -1,0 +1,25 @@
+.shop-nav {
+  display: flex;
+  align-items: center;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &--user {
+      background-image: url('../images/user.png');
+    }
+  }
+}
+
+@import './cart.scss';

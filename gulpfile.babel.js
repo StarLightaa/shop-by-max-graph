@@ -20,6 +20,7 @@ export const build = gulp.series(
     sassBuildNotMin,
     assetsBuild,
     imagesBuild,
+    spritesBuild,
   ),
 );
 
@@ -32,5 +33,6 @@ export const watch = gulp.series(
     sassWatch,
     assetsWatch,
     imagesWatch,
+    spritesWatch,
   ),
 );
