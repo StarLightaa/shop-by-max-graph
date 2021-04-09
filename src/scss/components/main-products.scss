@@ -20,6 +20,30 @@
       @extend .nav__link--current;
     }
   }
+
+  &__btn-center {
+    text-align: center;
+  }
+
+  &__more {
+    margin-top: 95px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 13px;
+    color: $color-gray;
+
+    span {
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    svg {
+      width: 13px;
+      height: 22px;
+      fill: $color-dark;
+    }
+  }
 }
 
 .products-grid {

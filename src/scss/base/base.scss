@@ -83,6 +83,7 @@ img {
 .main-link {
   position: relative;
   font-size: 15px;
+  color: $color-dark;
 
   &::before {
     content: "";
@@ -91,9 +92,13 @@ img {
     bottom: -5px;
     width: 100%;
     height: 2px;
-    background-color: $color-dark;
+    background-color: currentColor;
     opacity: 0;
     transition: opacity .3s linear;
+  }
+
+  &--white {
+    color: $color-white;
   }
 
   &:hover {

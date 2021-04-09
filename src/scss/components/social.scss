@@ -1,0 +1,27 @@
+.social {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  &__link {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &--tw {
+      background-image: url('../images/twitter.png');
+    }
+    &--fb {
+      background-image: url('../images/facebook.png');
+    }
+    &--insta {
+      background-image: url('../images/instagram.png');
+    }
+    &--pin {
+      background-image: url('../images/pinterest.png');
+    }
+  }
+}
