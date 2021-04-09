@@ -1,0 +1,29 @@
+.banners-article {
+  padding: 54px 45% 60px 60px;
+  min-height: 290px;
+  background-color: #e9e4df;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  &__link {
+    @extend .main-link;
+  }
+
+  &--midseason {
+    background-image: url('../images/midseason.png');
+  }
+  &--summer {
+    background-image: url('../images/summer.png');
+  }
+  &--accessories {
+    background-image: url('../images/accessories.png');
+  }
+}
