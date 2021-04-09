@@ -2,11 +2,13 @@ import 'focus-visible'
 import lazyImages from './modules/lazyImages';
 import documentReady from './helpers/documentReady';
 
-import test from './test';
+import bannerSlider from './banner-slider';
+import marketing from './components/marketing';
 
 documentReady(() => {
   lazyImages();
-  test();
+  bannerSlider();
+  marketing();
 });
 
 
