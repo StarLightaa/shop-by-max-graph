@@ -1,0 +1,123 @@
+.hide-filters {
+  margin-bottom: 18px;
+  font-size: 10px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url('../images/close.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 10px;
+  }
+}
+
+.catalog-filters {
+  width: 309px;
+  padding-top: 30px;
+  padding-right: 66px;
+}
+
+.catalog-content {
+  min-height: 500px;
+}
+
+.catalog-filter {
+  border-top: 1px solid #eee;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 34px;
+    padding-bottom: 34px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  &__caption {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    margin: 0;
+    margin-right: 5px;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  &__toggle {
+    position: relative;
+    width: 12px;
+    height: 12px;
+    color: #aaa;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 0;
+      height: 100%;
+      width: 2px;
+      background-color: currentColor;
+      transform:translateX(-50%);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      height: 2px;
+      width: 100%;
+      background-color: currentColor;
+      transform:translateY(-50%);
+    }
+  }
+
+  &__items {
+    columns: 2;
+  }
+
+  &__item {
+    margin-bottom: 14px;
+
+    &:nth-child(5n) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__bottom {
+    display: none;
+    padding-bottom: 34px;
+
+    &--open {
+      display: block;
+    }
+  }
+
+  &--open {
+    .catalog-filter__bottom {
+      display: block;
+    }
+    .catalog-filter__toggle::before {
+      display: none;
+    }
+  }
+
+  &:last-child() {
+    border-bottom: 1px solid #eee;
+  }
+}

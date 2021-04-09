@@ -1,0 +1,47 @@
+.custom-checkbox {
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+
+  &__text {
+    position: relative;
+    padding-left: 15px;
+    font-size: 13px;
+    color: $color-gray;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: 0;
+      width: 11px;
+      height: 11px;
+      border: 2px solid #aaa;
+    }
+
+    &::after {
+      opacity: 0;
+      content: '\2713';
+      position: absolute;
+      left: 2px;
+      top: 0;
+      color: #aaa;
+    }
+  }
+
+  &__input {
+    &:checked + span {
+      color: $color-dark;
+
+      &::before {
+        border-color: $color-dark;
+      }
+      &::after {
+        opacity: 1;
+        color: $color-dark;
+      }
+    }
+  }
+
+
+}

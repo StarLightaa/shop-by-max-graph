@@ -16,15 +16,17 @@
     background-repeat: no-repeat;
   }
 
-  &__quantity {
-    display: inline-flex;
-    align-items: center;
-    height: 16px;
-    border-radius: 25px;
-    padding: 0 5px;
-    font-size: 10px;
-    font-weight: 700;
-    color: $color-white;
-    background-color: $color-dark;
-  }
+  &__quantity {}
+}
+
+.quantity {
+  display: inline-flex;
+  align-items: center;
+  height: 16px;
+  border-radius: 25px;
+  padding: 0 5px;
+  font-size: 10px;
+  font-weight: 700;
+  color: $color-white;
+  background-color: $color-dark;
 }
