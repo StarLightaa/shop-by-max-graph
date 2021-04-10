@@ -1,0 +1,155 @@
+.catalog-grid {
+  padding-top: 34px;
+  width: 987px;
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__props {
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    margin-bottom: 79px;
+  }
+}
+
+[data-grid-columns="3"] {
+  .catalog-grid__item {
+    width: 31.3%;
+
+    &:not(:nth-child(3n)) {
+      margin-right: 3%;
+    }
+
+    &:nth-last-child(-n+3) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+[data-grid-columns="4"] {
+  .catalog-grid__item {
+    width: 22.7%;
+
+    &:not(:nth-child(4n)) {
+      margin-right: 3%;
+    }
+
+    &:nth-last-child(-n+4) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+[data-grid-columns="5"] {
+  .catalog-grid__item {
+    width: 17.6%;
+
+    &:not(:nth-child(5n)) {
+      margin-right: 3%;
+    }
+
+    &:nth-last-child(-n+5) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.catalog-props {
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+}
+
+.catalog-columns {
+  display: flex;
+  align-items: center;
+
+  font-weight: 700;
+  font-size: 10px;
+  text-transform: uppercase;
+
+  &__text {
+    margin-right: 3px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  &__btn {
+    padding: 0 5px;
+    font-size: 10px;
+    color: $color-gray;
+
+    &--current {
+      color: $color-dark;
+
+      &::before {
+        opacity: 1;
+      }
+    }
+
+    &:hover {
+      color: $color-dark;
+    }
+  }
+}
+
+.catalog-choice {
+  font-size: 0;
+  display: none;
+
+  &__item {
+    margin-right: 5px;
+    color: $color-tundora;
+    padding: 5px 12px;
+    font-weight: 500;
+    font-size: 13px;
+    border-radius: 12px;
+    background-color: #eee;
+    transition: background-color .3s, color .3s;
+
+    svg {
+      margin-left: 5px;
+      width: 8px;
+      height: 9px;
+      fill: currentColor;
+    }
+
+    &:hover {
+      color: $color-white;
+      background-color: $color-dark;
+
+      svg {
+        fill: currentColor;
+      }
+    }
+  }
+
+  &__clear {
+    position: relative;
+    font-weight: 500;
+    font-size: 13px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 100%;
+      height: 2px;
+      background-color: currentColor;
+      opacity: 1;
+      transition: opacity .3s linear;
+    }
+  }
+}

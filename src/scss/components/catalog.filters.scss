@@ -24,10 +24,13 @@
   width: 309px;
   padding-top: 30px;
   padding-right: 66px;
+  margin-right: 30px;
 }
 
 .catalog-content {
   min-height: 500px;
+
+  display: flex;
 }
 
 .catalog-filter {

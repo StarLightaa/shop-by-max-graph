@@ -6,7 +6,7 @@ import mainSlider from './components/main-slider';
 import catalogSlider from './components/catalog-slider';
 import marketing from './components/marketing';
 import catalogFilterToggle from './components/catalog-filter-toggle';
-import hideFilters from './components/hide-filters';
+import catalogProps from './components/catalog-props';
 
 documentReady(() => {
   lazyImages();
@@ -14,7 +14,7 @@ documentReady(() => {
   marketing();
   catalogSlider();
   catalogFilterToggle();
-  hideFilters();
+  catalogProps();
 });
 
 
