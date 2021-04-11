@@ -7,6 +7,7 @@ import catalogSlider from './components/catalog-slider';
 import marketing from './components/marketing';
 import catalogFilterToggle from './components/catalog-filter-toggle';
 import catalogProps from './components/catalog-props';
+import customSelect from './components/custom-select';
 
 documentReady(() => {
   lazyImages();
@@ -15,6 +16,7 @@ documentReady(() => {
   catalogSlider();
   catalogFilterToggle();
   catalogProps();
+  customSelect();
 });
 
 

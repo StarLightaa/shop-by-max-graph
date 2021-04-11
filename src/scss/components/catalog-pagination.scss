@@ -1,0 +1,39 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  &__link {
+    height: 40px;
+    padding: 0 16px;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 1.2;
+    color: $color-gray;
+    border: 2px solid #eeeeee;
+    text-transform: uppercase;
+    transition: background-color .3s, color .3s, border-color .3s;
+
+    svg {
+      margin-left: 3px;
+      width: 7px;
+      height: 16px;
+      fill: currentColor;
+    }
+
+    &--current {
+      border-color: $color-dark;
+      background-color: $color-dark;
+      color: $color-white;
+    }
+
+    &:hover {
+      border-color: $color-dark;
+      background-color: $color-dark;
+      color: $color-white;
+    }
+  }
+}

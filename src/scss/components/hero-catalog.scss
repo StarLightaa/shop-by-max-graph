@@ -1,10 +1,48 @@
 .hero-catalog {
   padding-top: 130px;
+
   &__slider {
+    position: relative;
     overflow: hidden;
     width: 100%;
     background-color: #f8f8f8;
   }
+}
+
+.hero-prev-btn,
+.hero-next-btn {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid $color-dark;
+  z-index: 2;
+  color: $color-dark;
+  transition: background-color .3s;
+
+  svg {
+    width: 40px;
+    height: 20px;
+    fill: $color-dark;
+    transition: fill .3s;
+  }
+
+  &:hover {
+    background-color: $color-dark;
+    svg {
+      fill: $color-white;
+    }
+  }
+}
+
+.hero-next-btn {
+  left: auto;
+  right: 30px;
 }
 
 .catalog-slide {

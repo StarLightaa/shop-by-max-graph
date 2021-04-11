@@ -50,6 +50,16 @@
     <section class="hero-catalog">
       <div class="container hero-catalog__container">
         <div class="hero-catalog__slider">
+          <button class="hero-prev-btn btn-reset">
+            <svg>
+              <use xlink:href="images/sprites/sprite-multi.svg#prev-arrow"></use>
+            </svg>
+          </button>
+          <button class="hero-next-btn btn-reset">
+            <svg>
+              <use xlink:href="images/sprites/sprite-multi.svg#next-arrow"></use>
+            </svg>
+          </button>
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
@@ -245,9 +255,18 @@
                     <li class="catalog-columns__item"><button data-columns="5" class="btn-reset catalog-columns__btn main-link">5</button></li>
                   </ul>
                 </div>
-                <select class="catalog-select">
-                  <option value="">1234</option>
-                </select>
+
+                <div class="custom-select" tabindex="0">
+                  <div class="custom-select__top">Sort by latest</div>
+                  <div class="custom-select__dropdown">
+                    <ul class="custom-select__list list-reset">
+                      <li class="custom-select__item">Sort by latest</li>
+                      <li class="custom-select__item">Sort by price</li>
+                      <li class="custom-select__item">Sort by smth</li>
+                    </ul>
+                  </div>
+                </div>
+
               </div>
               <div class="catalog-props__choice catalog-choice">
                 <button class="btn-reset catalog-choice__clear">Clear all</button>
@@ -259,6 +278,43 @@
                   <div class="product__img">
                     <img src="images/product-1.jpg" alt="Boots">
                   </div>
+                  <span class="product__prop product__prop--new">New</span>
+                  <h3 class="product__title">
+                    <a href="#">Azure Tote</a>
+                  </h3>
+                  <span class="product__price">$290.00</span>
+                </article>
+              </li>
+              <li class="catalog-grid__item">
+                <article class="product">
+                  <div class="product__img">
+                    <span class="product__sale">Sale</span>
+                    <img src="images/product-1.jpg" alt="Boots">
+                  </div>
+                  <h3 class="product__title">
+                    <a href="#">Azure Tote</a>
+                  </h3>
+                  <span class="product__price">$290.00</span>
+                  <span class="product__oldprice">$165.00</span>
+                </article>
+              </li>
+              <li class="catalog-grid__item">
+                <article class="product">
+                  <div class="product__img">
+                    <img src="images/product-1.jpg" alt="Boots">
+                  </div>
+                  <h3 class="product__title">
+                    <a href="#">Azure Tote</a>
+                  </h3>
+                  <span class="product__price">$290.00</span>
+                </article>
+              </li>
+              <li class="catalog-grid__item">
+                <article class="product">
+                  <div class="product__img">
+                    <img src="images/product-1.jpg" alt="Boots">
+                  </div>
+                  <span class="product__prop product__prop--best-seller">best seller</span>
                   <h3 class="product__title">
                     <a href="#">Azure Tote</a>
                   </h3>
@@ -353,38 +409,18 @@
                   <span class="product__price">$290.00</span>
                 </article>
               </li>
-              <li class="catalog-grid__item">
-                <article class="product">
-                  <div class="product__img">
-                    <img src="images/product-1.jpg" alt="Boots">
-                  </div>
-                  <h3 class="product__title">
-                    <a href="#">Azure Tote</a>
-                  </h3>
-                  <span class="product__price">$290.00</span>
-                </article>
-              </li>
-              <li class="catalog-grid__item">
-                <article class="product">
-                  <div class="product__img">
-                    <img src="images/product-1.jpg" alt="Boots">
-                  </div>
-                  <h3 class="product__title">
-                    <a href="#">Azure Tote</a>
-                  </h3>
-                  <span class="product__price">$290.00</span>
-                </article>
-              </li>
-              <li class="catalog-grid__item">
-                <article class="product">
-                  <div class="product__img">
-                    <img src="images/product-1.jpg" alt="Boots">
-                  </div>
-                  <h3 class="product__title">
-                    <a href="#">Azure Tote</a>
-                  </h3>
-                  <span class="product__price">$290.00</span>
-                </article>
+            </ul>
+            <ul class="pagination list-reset">
+              <li class="pagination__item"><a href="#" class="pagination__link pagination__link--current">1</a></li>
+              <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+              <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">
+                  Next
+                  <svg>
+                    <use xlink:href="images/sprites/sprite-multi.svg#angle-right"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
