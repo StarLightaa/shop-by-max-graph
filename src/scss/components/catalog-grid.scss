@@ -8,7 +8,7 @@
   }
 
   &__props {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   &__item {
@@ -110,6 +110,7 @@
 
   &__item {
     margin-right: 5px;
+    margin-bottom: 5px;
     color: $color-tundora;
     padding: 5px 12px;
     font-weight: 500;
@@ -123,6 +124,7 @@
       width: 8px;
       height: 9px;
       fill: currentColor;
+      pointer-events: none;
     }
 
     &:hover {
