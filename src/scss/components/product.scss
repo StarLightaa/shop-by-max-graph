@@ -61,4 +61,31 @@
     color: $color-gray;
     text-decoration: line-through;
   }
+
+  &:hover {
+    .product-custom__price {
+      transform: translateY(-100%);
+    }
+    .product-custom__cart {
+      transform: translateY(-100%);
+    }
+  }
+}
+
+.product-custom {
+  height: 18px;
+  overflow: hidden;
+
+  &__price {
+    transition: transform .3s;
+  }
+  &__cart {
+    transition: transform .3s;
+  }
+  .to-cart {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 10px;
+    text-transform: uppercase;
+  }
 }

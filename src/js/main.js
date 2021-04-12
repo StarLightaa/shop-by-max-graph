@@ -15,7 +15,7 @@ import stepper from './components/stepper';
 import cardSlider from './components/card-slider';
 import cardTabs from './components/card-bottom-tabs';
 import simplebarScroll from './components/simplebar-scroll';
-// import 'simplebar';
+import toTop from './components/to-top';
 
 documentReady(() => {
   lazyImages();
@@ -32,8 +32,7 @@ documentReady(() => {
   cardSlider();
   cardTabs();
   simplebarScroll();
-
-
+  toTop();
 });
 
 

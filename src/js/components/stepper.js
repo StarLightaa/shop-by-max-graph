@@ -1,19 +1,15 @@
 export default () => {
   const stepper = document.querySelector('.stepper');
+
+  if(!stepper) {
+    return;
+  }
+
   const stepperInput = stepper.querySelector('input');
   const stepperMinusBtn = stepper.querySelector('.stepper__btn--minus');
   const stepperPlusBtn = stepper.querySelector('.stepper__btn--plus');
   const stepperMin = 1;
   const stepperMax = 99999;
-
-  const incrementStepperValue = (stepperValue) => {
-    if(stepperValue >= stepperMax) {
-      stepperMinusBtn.disabled = false;
-      stepperPlusBtn.disabled = true;
-    } else {
-      stepperPlusBtn.disabled = false;
-    }
-  };
 
   stepperInput.addEventListener('keydown', (e) => {
     if(e.currentTarget.value <= stepperMin) {

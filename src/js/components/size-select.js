@@ -2,6 +2,10 @@ export default () => {
   const sizeSelect = document.querySelector('.size-select');
   let size = '';
 
+  if(!sizeSelect) {
+    return;
+  }
+
   sizeSelect.addEventListener('click', (e) => {
     if(e.target.classList.contains('size-select__btn')) {
 

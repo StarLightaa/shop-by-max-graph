@@ -1,6 +1,9 @@
 export default () => {
   const colorSelect = document.querySelector('.color-select');
 
+  if(!colorSelect) {
+    return;
+  }
   colorSelect.addEventListener('click', (e) => {
     if(e.target.classList.contains('color-select__btn')) {
       document.querySelectorAll('.color-select__btn').forEach(el => el.classList.remove('color-select__btn--active'));
