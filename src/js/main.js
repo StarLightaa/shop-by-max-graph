@@ -11,6 +11,7 @@ import customSelect from './components/custom-select';
 import freeDelivery from './components/free-delivery';
 import colorSelect from './components/color-select';
 import sizeSelect from './components/size-select';
+import stepper from './components/stepper'
 
 documentReady(() => {
   lazyImages();
@@ -23,6 +24,7 @@ documentReady(() => {
   freeDelivery();
   colorSelect();
   sizeSelect();
+  stepper();
 });
 
 

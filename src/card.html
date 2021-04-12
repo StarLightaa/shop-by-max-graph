@@ -136,7 +136,7 @@
                     </ul>
                   </div>
 
-                  <div class="card-info__select size-select">
+                  <div class="card-info__select size-select card-info__second-select">
                     <p class="size-select__selected">Size: <span>Select a size</span></p>
                     <ul class="size-select__list list-reset">
                       <li class="size-select__item">
@@ -172,6 +172,20 @@
                         <use xlink:href="images/sprites/sprite-multi.svg#close"></use>
                       </svg>
                       clear
+                    </button>
+                  </div>
+
+                  <div class="card-info__stepper stepper">
+                    <button class="btn-reset stepper__btn stepper__btn--minus" aria-label="minus" disabled>
+                      <svg>
+                        <use xlink:href="images/sprites/sprite-multi.svg#minus"></use>
+                      </svg>
+                    </button>
+                    <input type="text" class="stepper__input" value="1" maxlength="5">
+                    <button class="btn-reset stepper__btn stepper__btn--plus" aria-label="plus">
+                      <svg>
+                        <use xlink:href="images/sprites/sprite-multi.svg#plus"></use>
+                      </svg>
                     </button>
                   </div>
                 </div>
