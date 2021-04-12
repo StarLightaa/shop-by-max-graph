@@ -9,4 +9,15 @@ export default () => {
       prevEl: '.hero-prev-btn',
     },
   });
+
+  new Swiper('.card-related__slider', {
+    loop: true,
+    slidesPerView: 4,
+    spaceBetween: 30,
+    pagination: {
+      el: '.related-pag',
+      type: 'bullets',
+      clickable: true,
+    },
+  });
 };
