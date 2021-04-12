@@ -1,0 +1,77 @@
+.card-description {
+  display: flex;
+  align-items: flex-start;
+
+  &__left {
+    padding-top: 30px;
+    width: 16%;
+    max-height: 210px;
+  }
+
+  &__right {
+    // padding-top: 21px;
+    padding-right: 120px;
+    padding-left: 125px;
+    width: 84%;
+  }
+
+  &__navigation {
+    // padding: 23px 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__link {
+    font-weight: 700;
+    font-size: 15px;
+    color: $color-gray;
+    transition: color .3s;
+
+    &:hover {
+      color: $color-dark;
+      transition: color 0.3s;
+    }
+
+    &--active {
+      color: $color-dark;
+      pointer-events: none;
+    }
+  }
+
+  &__content {
+    display: none;
+
+    p {
+      margin: 0 0 30px;
+      font-weight: 500px;
+      font-size: 13px;
+      line-height: 26px;
+    }
+
+    &--active {
+      display: block;
+    }
+  }
+
+  .simplebar-track.simplebar-vertical {
+    width: 3px;
+    background-color: #ccc;
+  }
+
+  .simplebar-scrollbar::before {
+    left: 0;
+    right: 0;
+    border-radius: 0;
+    width: 3px;
+    height: 100%;
+    background-color: $color-dark;
+    opacity: 1;
+  }
+}
+

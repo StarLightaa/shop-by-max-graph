@@ -1,4 +1,4 @@
-import 'focus-visible'
+import 'focus-visible';
 import lazyImages from './modules/lazyImages';
 import documentReady from './helpers/documentReady';
 
@@ -13,6 +13,9 @@ import colorSelect from './components/color-select';
 import sizeSelect from './components/size-select';
 import stepper from './components/stepper';
 import cardSlider from './components/card-slider';
+import cardTabs from './components/card-bottom-tabs';
+import simplebarScroll from './components/simplebar-scroll';
+// import 'simplebar';
 
 documentReady(() => {
   lazyImages();
@@ -27,6 +30,10 @@ documentReady(() => {
   sizeSelect();
   stepper();
   cardSlider();
+  cardTabs();
+  simplebarScroll();
+
+
 });
 
 
