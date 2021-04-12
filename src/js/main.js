@@ -9,6 +9,8 @@ import catalogFilterToggle from './components/catalog-filter-toggle';
 import catalogProps from './components/catalog-props';
 import customSelect from './components/custom-select';
 import freeDelivery from './components/free-delivery';
+import colorSelect from './components/color-select';
+import sizeSelect from './components/size-select';
 
 documentReady(() => {
   lazyImages();
@@ -19,6 +21,8 @@ documentReady(() => {
   catalogProps();
   customSelect();
   freeDelivery();
+  colorSelect();
+  sizeSelect();
 });
 
 

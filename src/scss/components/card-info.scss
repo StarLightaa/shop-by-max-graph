@@ -1,0 +1,56 @@
+.card-info {
+
+  &__prop {
+    padding-left: 19px;
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    margin: 0 0 15px;
+    font-weight: 500;
+    font-size: 24px;
+  }
+
+  &__rate {
+    font-size: 13px;
+    color: $color-gray;
+    margin-bottom: 25px;
+
+    span {
+      margin-left: 3px;
+    }
+  }
+
+  &__price {
+    margin-bottom: 20px;
+  }
+
+  &__descr {
+    color: $color-tundora;
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 50px;
+  }
+
+  &__first-select {
+    margin-bottom: 28px;
+  }
+}
+
+.info-price {
+  display: flex;
+  align-items: flex-end;
+
+  &__current {
+    font-weight: 700;
+    font-size: 24px;
+    margin-right: 20px;
+  }
+
+  &__old {
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: line-through;
+    color: #959595;
+  }
+}

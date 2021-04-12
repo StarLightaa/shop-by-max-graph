@@ -1,0 +1,27 @@
+.card-page {
+  &__header {
+    padding-top: 0;
+  }
+}
+
+.card {
+  padding-top: 67px;
+}
+
+.card-content {
+  padding-top: 20px;
+}
+
+.card-top {
+  display: flex;
+
+  &__left {
+    width: 57.5%;
+  }
+
+  &__right {
+    width: calc(100% - 57.5%);
+    padding-left: 10.7%;
+    padding-top: 57px;
+  }
+}

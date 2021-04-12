@@ -1,9 +1,13 @@
 export default () => {
+  const catalog = document.querySelector('.catalog');
   const catalogFiltersTop = document.querySelectorAll('.catalog-filter__top');
   const hideFilters = document.querySelector('.hide-filters');
   const catalogFilterItems = document.querySelectorAll('.catalog-filter__item');
   const catalogChoice = document.querySelector('.catalog-choice');
 
+  if(!catalog) {
+    return;
+  }
   catalogFiltersTop.forEach(el => {
     el.addEventListener('click', (e) => {
       e.currentTarget.closest('.catalog-filter').classList.toggle('catalog-filter--open');

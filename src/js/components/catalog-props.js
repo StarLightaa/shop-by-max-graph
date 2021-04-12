@@ -1,7 +1,11 @@
 export default () => {
+  const catalog = document.querySelector('.catalog');
   const catalogColumns = document.querySelector('.catalog-columns__list');
   const catalogGridContent = document.querySelector('.catalog-grid__content');
 
+  if(!catalog) {
+    return;
+  }
   catalogColumns.addEventListener('click', (e) => {
     if(e.target.classList.contains('catalog-columns__btn') || e.target.closest('.catalog-columns__item')) {
       let columns = e.target.dataset.columns;
