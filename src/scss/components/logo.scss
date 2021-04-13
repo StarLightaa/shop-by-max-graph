@@ -3,6 +3,11 @@
   width: 117px;
   height: 22px;
 
+  @include xs {
+    width: 90px;
+    height: 17px;
+  }
+
   svg {
     display: block;
     width: 100%;

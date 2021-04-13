@@ -11,10 +11,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include xs {
+      padding: 20px 15px;
+    }
   }
 
   &__shop-nav {
     margin-left: 250px;
+
+    @include md {
+      margin: 0;
+    }
   }
 
   &--catalog {

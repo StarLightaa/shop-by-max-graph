@@ -11,6 +11,10 @@
   transform: translateX(-150vw);
   transition: transform 0.3s;
 
+  @include xs {
+    left: 15px;
+  }
+
   &__text {
     margin-left: 10px;
   }

@@ -17,6 +17,7 @@ import cardTabs from './components/card-bottom-tabs';
 import simplebarScroll from './components/simplebar-scroll';
 import toTop from './components/to-top';
 import products from './components/products';
+import burger from './components/burger';
 
 documentReady(() => {
   lazyImages();
@@ -35,6 +36,7 @@ documentReady(() => {
   simplebarScroll();
   toTop();
   products();
+  burger();
 });
 
 

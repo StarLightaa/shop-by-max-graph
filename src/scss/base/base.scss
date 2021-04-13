@@ -69,12 +69,20 @@ img {
   max-width: 1426px;
   padding: 0 50px;
   margin: 0 auto;
+
+  @include xs {
+    padding: 0 15px;
+  }
 }
 
 .container--large {
   max-width: 1920px;
   padding: 0 50px;
   margin: 0 auto;
+
+  @include xs {
+    padding: 0 15px;
+  }
 }
 
 .btn {

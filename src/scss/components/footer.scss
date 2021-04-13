@@ -1,13 +1,28 @@
 .footer {
   &__content {
-    padding: 0 250px;
-    padding-top: 100px;
+    padding: 100px 250px 0;
+
+    @include lg {
+      padding: 100px 100px 0;
+    }
+    @include md {
+      padding: 80px 0 0;
+    }
+
+    @include sm {
+      padding: 40px 0 0;
+    }
   }
 
   &__top {
     display: flex;
     justify-content: space-between;
     padding-bottom: 95px;
+
+    @include sm {
+      flex-wrap: wrap;
+      padding-bottom: 50px;
+    }
   }
 
   &__bottom {
@@ -16,6 +31,17 @@
     justify-content: space-between;
     border-top: 1px solid #eee;
     padding: 40px 0;
+
+    @include xs {
+      flex-direction: column;
+      padding: 20px 0;
+    }
+  }
+
+  &__left {
+    @include xs {
+      margin-bottom: 20px;
+    }
   }
 
   &__list {
@@ -27,6 +53,10 @@
         &:not(:last-child) {
           margin-bottom: 0;
           margin-right: 43px;
+
+          @include sm {
+            margin-right: 20px;
+          }
         }
       }
 
@@ -46,6 +76,21 @@
   &__column {
     &:nth-child(2) {
       margin-left: 30px;
+
+      @include md {
+        margin-left: 0;
+      }
+    }
+
+    &:last-child {
+      @include md {
+        width: 40%;
+      }
+
+      @include sm {
+        margin-top: 40px;
+        width: 100%;
+      }
     }
 
     &--flex {
@@ -61,6 +106,10 @@
     font-weight: 700;
     font-size: 16px;
     text-transform: uppercase;
+
+    @include xs {
+      font-size: 14px;
+    }
   }
 
   &__item {
@@ -73,6 +122,10 @@
     position: relative;
     font-size: 13px;
     color: $color-tundora;
+
+    @include xs {
+      font-size: 12px;
+    }
 
     &::after {
       content: '';
@@ -103,6 +156,10 @@
     transform: translateY(3px);
     margin-bottom: 25px;
     width: 646px;
+
+    @include md {
+      width: 100%;
+    }
   }
 
   &__text {

@@ -12,6 +12,9 @@
 <body>
   <header class="header">
     <div class="container--large header__container">
+      <button class="burger btn-reset header__burger">
+        <span class="burger__line"></span>
+      </button>
       <nav class="nav header__nav">
         <ul class="nav__list list-reset">
           <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
@@ -20,6 +23,12 @@
           <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
           <li class="nav__item"><a href="#" class="nav__link">Page</a></li>
         </ul>
+
+        <button class="nav__close btn-reset" aria-label="Close">
+          <svg>
+            <use xlink:href="images/sprites/sprite-multi.svg#close"></use>
+          </svg>
+        </button>
       </nav>
       <a class="logo header__logo" aria-label="logo">
         <svg>

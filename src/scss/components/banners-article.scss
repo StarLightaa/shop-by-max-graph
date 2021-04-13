@@ -26,4 +26,12 @@
   &--accessories {
     background-image: url('../images/accessories.png');
   }
+
+  @include md {
+    padding: 50px 20px;
+  }
+
+  @include sm {
+    padding-right: 150px;
+  }
 }
