@@ -70,8 +70,27 @@
   }
 
   &__link {
+    position: relative;
     font-size: 13px;
     color: $color-tundora;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background-color: currentColor;
+      opacity: 0;
+      transition: opacity .3s;
+    }
+
+    &:hover {
+      &::after {
+        opacity: 1;
+      }
+    }
 
     &--row {
       font-weight: 700;

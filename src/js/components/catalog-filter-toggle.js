@@ -49,6 +49,9 @@ export default () => {
         document.querySelector(`[data-choice-text="${text}"]`).remove();
       }
 
+      let quantity = el.closest('.catalog-filter__items').querySelectorAll('.custom-checkbox--active').length;
+      el.closest('.catalog-filter').querySelector('.catalog-filter__quantity').textContent = quantity;
+
       let activeCheckboxes = document.querySelectorAll('.custom-checkbox--active');
 
       if(activeCheckboxes.length > 0) {

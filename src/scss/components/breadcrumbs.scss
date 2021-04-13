@@ -27,6 +27,11 @@
     font-size: 10px;
     text-transform: uppercase;
     color: $color-gray;
+    transition: color .3s;
+
+    &:hover {
+      color: $color-dark;
+    }
 
     &--current {
       color: $color-dark;

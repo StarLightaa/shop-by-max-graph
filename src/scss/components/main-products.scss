@@ -33,6 +33,12 @@
     font-size: 13px;
     color: $color-gray;
 
+    &:hover {
+      svg {
+        transform: translateY(5px);
+      }
+    }
+
     span {
       display: inline-block;
       margin-bottom: 10px;
@@ -42,6 +48,7 @@
       width: 13px;
       height: 22px;
       fill: $color-dark;
+      transition: transform .3s;
     }
   }
 }

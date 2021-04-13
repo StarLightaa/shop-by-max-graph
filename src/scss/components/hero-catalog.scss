@@ -80,11 +80,25 @@
       border: 1px solid $color-dark;
       color: $color-white;
       background-color: $color-dark;
+      transition: all .3s;
+
+      &:hover {
+        border: 1px solid $color-dark;
+        color: $color-dark;
+        background-color: transparent;
+      }
     }
     &--light {
       border: 1px solid $color-dark;
       color: $color-dark;
       background-color: transparent;
+      transition: all .3s;
+
+      &:hover {
+        border: 1px solid $color-dark;
+        color: $color-white;
+        background-color: $color-dark;
+      }
     }
 
   }
