@@ -2,6 +2,8 @@
   position: relative;
 
   &__img {
+    position: relative;
+    overflow: hidden;
     margin-bottom: 20px;
 
     img {
@@ -17,6 +19,7 @@
     left: 20px;
     color: $color-dark;
     border: 2px solid $color-dark;
+    z-index: 20;
 
     font-weight: 700;
     font-size: 10px;
@@ -63,6 +66,13 @@
   }
 
   &:hover {
+    .product__img {
+      img {
+        transform: scale(1.1);
+        transition: transform(.3s);
+      }
+    }
+
     .product-custom__price {
       transform: translateY(-100%);
     }
