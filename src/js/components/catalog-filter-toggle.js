@@ -5,6 +5,9 @@ export default () => {
   const catalogFilterItems = document.querySelectorAll('.catalog-filter__item');
   const catalogChoice = document.querySelector('.catalog-choice');
 
+  const mobileFiltersOpen = document.querySelector('.catalog-mobile-filters');
+  const catalogFilters = document.querySelector('.catalog-filters');
+
   if(!catalog) {
     return;
   }
@@ -92,7 +95,5 @@ export default () => {
     if(e.currentTarget.children.length === 1) {
       e.currentTarget.style.display = 'none';
     }
-
-
   });
 };

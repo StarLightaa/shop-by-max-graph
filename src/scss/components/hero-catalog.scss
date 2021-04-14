@@ -1,6 +1,14 @@
 .hero-catalog {
   padding-top: 130px;
 
+  @include xs {
+    padding-top: 100px;
+  }
+
+  &__container {
+    position: relative;
+  }
+
   &__slider {
     position: relative;
     overflow: hidden;
@@ -25,6 +33,14 @@
   color: $color-dark;
   transition: background-color .3s;
 
+  @include sm {
+    left: 10px;
+  }
+
+  @include xs {
+    display: none;
+  }
+
   svg {
     width: 40px;
     height: 20px;
@@ -43,10 +59,22 @@
 .hero-next-btn {
   left: auto;
   right: 30px;
+
+  @include sm {
+    right: 10px;
+  }
 }
 
 .catalog-slide {
   padding: 110px;
+
+  @include sm {
+    padding: 70px;
+  }
+
+  @include xs {
+    padding: 20px;
+  }
 
   &__title {
     margin: 0;
@@ -69,6 +97,11 @@
     display: flex;
     align-items: center;
     gap: 15px;
+
+    @include xs {
+      display: block;
+      padding-bottom: 70px;
+    }
   }
 
   &__link {
@@ -94,6 +127,10 @@
       background-color: transparent;
       transition: all .3s;
 
+      @include xs {
+        margin-top: 20px;
+      }
+
       &:hover {
         border: 1px solid $color-dark;
         color: $color-white;
@@ -110,5 +147,11 @@
     bottom: 0;
     right: 0;
     z-index: -1;
+
+    @include md {
+      right: 7%;
+      display: none;
+      width: 25%;
+    }
   }
 }

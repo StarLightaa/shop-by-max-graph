@@ -18,6 +18,7 @@ import simplebarScroll from './components/simplebar-scroll';
 import toTop from './components/to-top';
 import products from './components/products';
 import burger from './components/burger';
+import mobileFilters from './components/mobile-filters';
 
 documentReady(() => {
   lazyImages();
@@ -37,6 +38,7 @@ documentReady(() => {
   toTop();
   products();
   burger();
+  mobileFilters();
 });
 
 

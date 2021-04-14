@@ -33,6 +33,16 @@
     align-items: center;
     column-gap: 5px;
     margin-bottom: 8px;
+
+    @include lg {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    @include lg {
+      margin-bottom: 5px;
+    }
   }
 
   &__btn {

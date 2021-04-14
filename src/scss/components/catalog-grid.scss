@@ -6,6 +6,10 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 70px;
+
+    @include md {
+      justify-content: space-between;
+    }
   }
 
   &__props {
@@ -14,6 +18,16 @@
 
   &__item {
     margin-bottom: 79px;
+
+    @include md {
+      margin-right: 0 !important;
+      margin-bottom: 50px;
+      width: 47% !important;
+    }
+
+    @include xs {
+      width: 48% !important;
+    }
   }
 }
 
@@ -75,6 +89,10 @@
   font-weight: 700;
   font-size: 10px;
   text-transform: uppercase;
+
+  @include md {
+    display: none;
+  }
 
   &__text {
     margin-right: 3px;

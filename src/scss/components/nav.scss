@@ -59,7 +59,9 @@
   }
 
   &__close {
+    display: none;
     @include md {
+      display: block;
       position: absolute;
       top: 4%;
       right: 10%;

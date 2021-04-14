@@ -6,6 +6,10 @@
     padding-top: 36px;
     padding-bottom: 26px;
     border-bottom: 1px solid #eee;
+
+    @include xs {
+      flex-wrap: wrap;
+    }
   }
 
   &__item {
